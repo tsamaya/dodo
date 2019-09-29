@@ -160,7 +160,7 @@ Form.propTypes = {
             id: PropTypes.string,
             label: PropTypes.string,
             type: PropTypes.oneOf([ "text", "email", "url", "password", "select", "createable-select", "multi-select", "textarea", "checkbox", "note" ]),
-            note: PropTypes.oneOf(PropTypes.string, PropTypes.object),
+            note: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
             isHidden: PropTypes.bool,
             isRequired: PropTypes.bool,
         })
